@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,11 +14,12 @@
     />
   </head>
   <body>
+    <!-- HEADER -->
     <header class="header">
       <div class="container">
-        <div class="header_logo">
-          <img class="header_logo_logotype" src="./images/Icon.svg" alt="logo" />
-          <div class="header_logo_signature"><span>Car</span>Sharing</div>
+        <div class="logo header_logo">
+          <img class="logo_logotype" src="./images/Icon.svg" alt="logo" />
+          <div class="logo_signature"><span>Car</span>Sharing</div>
         </div>
         <nav class="header_nav">
           <ul class="header_nav_list">
@@ -30,6 +31,8 @@
         </nav>
       </div>
     </header>
+
+    <!-- HERO -->
     <div class="hero">
       <div class="container">
         <div class="hero_content">
@@ -46,18 +49,159 @@
       </div>
       <div class="hero_arrow_down"><img src="./images/Icon Arrow Down.svg" /></div>
     </div>
+
+    <!-- BLOG -->
     <section class="blog">
       <div class="container">
-        <h2 class="section_title">Blog</h2>
+        <h2 class="section_title blog_title">Blog</h2>
         <div class="blog_cards">
           <div class="card">
-            <img class="card_photo" src="./images/photo1.png" />
-            <h3 class="card_title">Lorem ipsum dolor sit</h3>
-            <p class="card_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="#" class="primary_button btn--red">Read more</a>
+            <img class="card_photo_blog" src="./images/photo1.png" />
+            <div class="card_content">
+              <h3 class="card_title">Lorem ipsum sit dolor</h3>
+              <p class="card_text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <div class="card_button">
+                <a href="#" class="primary_button btn--red">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card_photo_blog" src="./images/photo2.png" />
+            <div class="card_content">
+              <h3 class="card_title">Lorem ipsum sit dolor</h3>
+              <p class="card_text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <div class="card_button">
+                <a href="#" class="primary_button btn--red">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card_photo_blog" src="./images/photo3.png" />
+            <div class="card_content">
+              <h3 class="card_title">Lorem ipsum sit dolor</h3>
+              <p class="card_text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <div class="card_button">
+                <a href="#" class="primary_button btn--red">Read more</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- SERVICE -->
+    <section class="service">
+      <div class="container">
+        <h2 class="section_title service_title">Service</h2>
+        <div class="service_cards">
+          <div class="card">
+            <img class="card_photo_service" src="./images/mini1.png" />
+            <div class="card_content">
+              <h3 class="card_title">Lorem ipsum sit dolor</h3>
+              <p class="card_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+              <div class="card_button">
+                <a href="#" class="primary_button btn--red">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card_photo_service" src="./images/mini2.png" />
+            <div class="card_content">
+              <h3 class="card_title">Lorem ipsum sit dolor</h3>
+              <p class="card_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+              <div class="card_button">
+                <a href="#" class="primary_button btn--red">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card_photo_service" src="./images/mini3.png" />
+            <div class="card_content">
+              <h3 class="card_title">Lorem ipsum sit dolor</h3>
+              <p class="card_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+              <div class="card_button">
+                <a href="#" class="primary_button btn--red">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card_photo_service" src="./images/mini4.png" />
+            <div class="card_content">
+              <h3 class="card_title">Lorem ipsum sit dolor</h3>
+              <p class="card_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+              <div class="card_button">
+                <a href="#" class="primary_button btn--red">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT  -->
+    <section class="contact">
+      <div class="container">
+        <h2 class="section_title contact_title">Contact</h2>
+
+        <div class="contact_content">
+          <div class="contact_photo">
+            <img class="contact_photo_img" src="./images/Form Photo.png" />
+          </div>
+          <div class="contact_form">
+            <form action="">
+              <div class="form_content">
+                <input type="text" name="name" id="name" placeholder="Type your name" />
+                <input type="email" name="email" id="email" placeholder="Type your e-mail" />
+                <textarea name="" id="" placeholder="Type your message"></textarea>
+                <label class="accept_regulations">
+                  <input type="checkbox" />
+                  <span></span>
+                  <p class="regulations">
+                    I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the
+                    European Parliament&rsquo;s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with
+                    regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection
+                    Directive)
+                  </p>
+                </label>
+                <input type="submit" value="Send" class="primary_button btn--white" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="logo footer_logo">
+          <img class="logo_logotype" src="./images/Icon.svg" alt="logo" />
+          <div class="logo_signature"><span>Car</span>Sharing</div>
+        </div>
+        <div class="footer_content">
+          <nav class="footer_nav nav_column_one">
+            <ul class="footer_nav_list">
+              <li><a href="#">Home page</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Share regulation</a></li>
+            </ul>
+          </nav>
+          <nav class="footer_nav nav_column_two">
+            <ul class="footer_nav_list">
+              <li><a href="#">Price</a></li>
+              <li><a href="#">Our fleet</a></li>
+              <li><a href="#">Our clients</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="footer_copyright">Copyright &copy; Coders Lab</div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
